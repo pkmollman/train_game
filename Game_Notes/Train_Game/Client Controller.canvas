@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"7f127b709cf4de9c","x":-680,"y":-600,"width":250,"height":60,"type":"text","text":"Client Controller"},
+		{"id":"436a7ed18fe9bccd","x":-680,"y":-480,"width":250,"height":60,"type":"text","text":"Game Start Signal\n"},
+		{"id":"8fc7832e91f6e542","x":-680,"y":-280,"width":250,"height":60,"type":"text","text":"Ball drop Servo Open\n"},
+		{"id":"14ff62cda29719e6","x":-680,"y":-380,"width":250,"height":60,"type":"text","text":"Allow Scoring\n"},
+		{"id":"d937c9d0d9aad412","x":-1000,"y":-1020,"width":250,"height":270,"type":"text","text":"  .   O       -G 6       (100pts)\n   O  O     -G4, 5    (50pts)\nO  O  O   -G1, 2 3 (10pts)"},
+		{"id":"27182826e11bb0d5","x":-380,"y":-380,"width":160,"height":60,"type":"text","text":"Goal Read"},
+		{"id":"f2dd2ee3db9f074a","type":"text","text":"Update Score","x":-180,"y":-380,"width":160,"height":60},
+		{"id":"ff8e7f64cebf9863","type":"text","text":"Wait\n","x":20,"y":-380,"width":100,"height":60},
+		{"id":"6fb661d90bc6056b","x":-155,"y":-780,"width":225,"height":60,"type":"text","text":"Host Query"},
+		{"id":"7085bbabbaea5be3","x":-410,"y":-780,"width":190,"height":60,"type":"text","text":"Game Over Signal"},
+		{"id":"726906e6f626aa82","type":"text","text":"Game Start Signal\n","x":-650,"y":-780,"width":190,"height":60},
+		{"id":"13a349a32f729819","x":-555,"y":-980,"width":250,"height":60,"type":"text","text":"Host Controller"}
+	],
+	"edges":[
+		{"id":"376d59983a76f0cf","fromNode":"14ff62cda29719e6","fromSide":"bottom","toNode":"8fc7832e91f6e542","toSide":"top"},
+		{"id":"439f3e63bee36446","fromNode":"14ff62cda29719e6","fromSide":"right","toNode":"27182826e11bb0d5","toSide":"left"},
+		{"id":"1c9528dcb8e6e6f1","fromNode":"27182826e11bb0d5","fromSide":"right","toNode":"f2dd2ee3db9f074a","toSide":"left"},
+		{"id":"2146370f1c97ba3e","fromNode":"f2dd2ee3db9f074a","fromSide":"right","toNode":"ff8e7f64cebf9863","toSide":"left"},
+		{"id":"6fb8fa97bd46b37f","fromNode":"7085bbabbaea5be3","fromSide":"bottom","toNode":"7f127b709cf4de9c","toSide":"right"},
+		{"id":"6f3332f19e55d163","fromNode":"726906e6f626aa82","fromSide":"bottom","toNode":"7f127b709cf4de9c","toSide":"top"}
+	]
+}
