@@ -16,7 +16,7 @@ const int SWITCHES[] = { 4, 7, 8 };
 
 
 // Array to store the IR sensor pins
-int IRSensors[] = {IRSensor1, IRSensor2, IRSensor3, IRSensor4, IRSensor5, IRSensor6};
+int IRSensors[] = {IRSensor1, IRSensor2, IRSensor3, IRSensor4, IRSensor6, IRSensor5};
 
 // Variables to track detection timing for each IR sensor
 unsigned long lastDetectionTime[6] = {0, 0, 0, 0, 0, 0};  // Stores the last detection time for each sensor
@@ -56,11 +56,11 @@ void loop() {
   for (int i = 0; i < 6; i++) {
     // If the IR sensor detects the ball (assuming LOW indicates detection) and the cooldown period has passed
     if (digitalRead(IRSensors[i]) == LOW && (currentTime - lastDetectionTime[i] > detectionCooldown)) {
-      Serial.print("IR Sensor ");
-      Serial.print(i + 1);
-      Serial.println(": DETECTED");
+      // Serial.print("IR Sensor ");
+      // Serial.print(i + 1);
+      // Serial.println(": DETECTED");
 
-      send_score_event(flag_state, i+1);
+      send_score_event(flag_state, i);
 
       // Update the last detection time for the current sensor
       lastDetectionTime[i] = currentTime;
