@@ -3,15 +3,15 @@ Code for Arduino for lanes
 */
 
 // Define the pin numbers for the IR sensors
-const int IRSensor1 = 3;  // IR Sensor 1 connected to digital pin 2
+const int IRSensor1 = 4;  // IR Sensor 1 connected to digital pin 2
 const int IRSensor2 = 5;  // IR Sensor 2 connected to digital pin 3
 const int IRSensor3 = 6;  // IR Sensor 3 connected to digital pin 4
-const int IRSensor4 = 9;  // IR Sensor 4 connected to digital pin 5
-const int IRSensor5 = 10;  // IR Sensor 5 connected to digital pin 6
-const int IRSensor6 = 11;  // IR Sensor 6 connected to digital pin 7
+const int IRSensor4 = 7;  // IR Sensor 4 connected to digital pin 5
+const int IRSensor5 = 9;  // IR Sensor 5 connected to digital pin 6
+const int IRSensor6 = 10;  // IR Sensor 6 connected to digital pin 7
 
 // dip in proper order
-const int SWITCHES[] = { 4, 7, 8 };
+const int SWITCHES[] = { 14, 15, 16 };
 
 
 
